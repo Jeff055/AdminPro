@@ -6,11 +6,14 @@ import { APP_ROUTES } from './app.routes';
 
 // Módulos
 import { PagesModule } from './pages/pages.module';
-
 import { AppRoutingModule } from './app-routing.module';
+import { ServiceModule } from './servicios/service.module';
+
+// Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
+
 
 @NgModule({
   declarations: [
@@ -22,9 +25,10 @@ import { RegisterComponent } from './login/register.component';
     BrowserModule,
     AppRoutingModule,
     PagesModule,
-    APP_ROUTES
+    APP_ROUTES,
+    ServiceModule
   ],
-  providers: [],
+  providers: [ ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
